@@ -9,6 +9,7 @@
 - [Тест-план](docs/TEST_PLAN.md)
 - [Тест-кейси](docs/TEST_CASES.md)
 - [Матриця трасування і результатів](docs/TRACEABILITY.md)
+- [Теоретичний HIL-стенд і схема](docs/HIL_STAND.md)
 - [Вимоги прошивки](reference/PRD.md)
 - [Підключення стенда](reference/WIRING.md)
 

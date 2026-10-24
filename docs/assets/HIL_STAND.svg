@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1480" viewBox="0 0 2200 1480" role="img" aria-labelledby="title desc">
+<title id="title">Гібридний HIL-стенд SENTRY SWM-2</title>
+<desc id="desc">Raspberry Pi керує реальним ESP32-S3 та агентом RP2040. Агент імітує датчик і кнопки, читає контакти реле та керує демонстраційним серво. Кінцевики повертають фактичне положення засувки. Mosquitto передає події стенда.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+<rect width="2200" height="1480" fill="#f5f7fb"/>
+<text x="60" y="64" font-family="Arial, DejaVu Sans, sans-serif" font-size="38" font-weight="700" fill="#172b45">ГІБРИДНИЙ HIL-СТЕНД · SENTRY SWM-2</text>
+<text x="60" y="106" font-family="Arial, DejaVu Sans, sans-serif" font-size="25" font-weight="400" fill="#60738d">Реальний DUT • імітація середовища • фізичні виходи • макет доставки пакунка</text>
+<rect x="60" y="155" width="420" height="180" rx="18" fill="#fff" stroke="#d8dfeb" stroke-width="2"/>
+<text x="90" y="200" font-family="Arial, DejaVu Sans, sans-serif" font-size="27" font-weight="700" fill="#263850">CI / РЕПОЗИТОРІЙ</text>
+<text x="90" y="244" font-family="Arial, DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#4a5c73">Запуск тестів і конфігурація</text>
+<text x="90" y="279" font-family="Arial, DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#4a5c73">Звіти, логи та докази</text>
+<rect x="680" y="155" width="700" height="180" rx="18" fill="#eaf1ff" stroke="#b6c9ee" stroke-width="2"/>
+<text x="710" y="200" font-family="Arial, DejaVu Sans, sans-serif" font-size="27" font-weight="700" fill="#2555af">RASPBERRY PI · КОНТРОЛЕР СТЕНДА</text>
+<text x="710" y="244" font-family="Arial, DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#4a5c73">pytest • керування DUT та агентом</text>
+<text x="710" y="279" font-family="Arial, DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#4a5c73">Журнал • локальний OTA-сервер • runner CI</text>
+<rect x="1570" y="155" width="570" height="180" rx="18" fill="#edf8f4" stroke="#b9decf" stroke-width="2"/>
+<text x="1600" y="200" font-family="Arial, DejaVu Sans, sans-serif" font-size="27" font-weight="700" fill="#147954">MOSQUITTO / ДАШБОРД</text>
+<text x="1600" y="244" font-family="Arial, DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#4a5c73">Події публікує Raspberry Pi</text>
+<text x="1600" y="279" font-family="Arial, DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#4a5c73">Стан прогону та результати</text>
+<path d="M 480 245 L 680 245" fill="none" stroke="#3068d8" stroke-width="3.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="510" y="226" font-family="Arial, DejaVu Sans, sans-serif" font-size="21" font-weight="600" fill="#3068d8">workflow</text>
+<path d="M 1380 245 L 1570 245" fill="none" stroke="#16825b" stroke-width="3.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="1425" y="226" font-family="Arial, DejaVu Sans, sans-serif" font-size="21" font-weight="600" fill="#16825b">MQTT</text>
+<rect x="60" y="450" width="550" height="570" rx="18" fill="#edf2fa" stroke="#d1dced" stroke-width="2"/>
+<text x="90" y="493" font-family="Arial, DejaVu Sans, sans-serif" font-size="27" font-weight="700" fill="#344e74">КЕРОВАНЕ ОТОЧЕННЯ</text>
+<rect x="90" y="530" width="490" height="255" rx="18" fill="#fff" stroke="#d8dfeb" stroke-width="2"/>
+<text x="115" y="574" font-family="Arial, DejaVu Sans, sans-serif" font-size="27" font-weight="700" fill="#344e74">АГЕНТ · RP2040 / PICO</text>
+<text x="115" y="620" font-family="Arial, DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#4a5c73">Імітація кнопок K1–K4</text>
+<text x="115" y="657" font-family="Arial, DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#4a5c73">ECHO у відповідь на TRIG</text>
+<text x="115" y="694" font-family="Arial, DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#4a5c73">Таймер / PIO; реєстрація подій</text>
+<text x="115" y="731" font-family="Arial, DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#4a5c73">Модель стану пакунка</text>
+<rect x="90" y="845" width="490" height="135" rx="18" fill="#fff" stroke="#d8dfeb" stroke-width="2"/>
+<text x="115" y="889" font-family="Arial, DejaVu Sans, sans-serif" font-size="25" font-weight="700" fill="#344e74">СПРАВЖНІЙ ДАТЧИК</text>
+<text x="115" y="927" font-family="Arial, DejaVu Sans, sans-serif" font-size="23" font-weight="400" fill="#4a5c73">Альтернативний режим</text>
+<text x="115" y="959" font-family="Arial, DejaVu Sans, sans-serif" font-size="23" font-weight="400" fill="#4a5c73">Перемикач джерела ECHO</text>
+<rect x="800" y="500" width="540" height="360" rx="18" fill="#fff" stroke="#8ba9db" stroke-width="2"/>
+<text x="830" y="550" font-family="Arial, DejaVu Sans, sans-serif" font-size="34" font-weight="700" fill="#2555af">ESP32-S3 · DUT</text>
+<text x="830" y="594" font-family="Arial, DejaVu Sans, sans-serif" font-size="25" font-weight="400" fill="#4a5c73">SENTRY 2.1.0 / 2.3.0</text>
+<text x="830" y="629" font-family="Arial, DejaVu Sans, sans-serif" font-size="25" font-weight="400" fill="#4a5c73">Незмінена прошивка</text>
+<path d="M 830 660 L 1310 660" stroke="#d8e1ef" stroke-width="2"/>
+<text x="830" y="704" font-family="Arial, DejaVu Sans, sans-serif" font-size="23" font-weight="400" fill="#4a5c73">K1–K4: GPIO41 / 40 / 39 / 38</text>
+<text x="830" y="740" font-family="Arial, DejaVu Sans, sans-serif" font-size="23" font-weight="400" fill="#4a5c73">TRIG: GPIO5 • ECHO: GPIO18</text>
+<text x="830" y="776" font-family="Arial, DejaVu Sans, sans-serif" font-size="23" font-weight="400" fill="#4a5c73">Реле: GPIO8</text>
+<text x="830" y="812" font-family="Arial, DejaVu Sans, sans-serif" font-size="23" font-weight="400" fill="#4a5c73">LED: GPIO4 • RGB: GPIO48</text>
+<rect x="1540" y="450" width="600" height="570" rx="18" fill="#fff6ec" stroke="#ecd3b3" stroke-width="2"/>
+<text x="1570" y="493" font-family="Arial, DejaVu Sans, sans-serif" font-size="27" font-weight="700" fill="#a56313">ДЕМОНСТРАЦІЙНИЙ ВУЗОЛ</text>
+<rect x="1570" y="530" width="540" height="115" rx="18" fill="#fff" stroke="#d8dfeb" stroke-width="2"/>
+<text x="1595" y="570" font-family="Arial, DejaVu Sans, sans-serif" font-size="25" font-weight="700" fill="#965a12">УЗГОДЖЕННЯ + РЕЛЕ 5 В</text>
+<text x="1595" y="607" font-family="Arial, DejaVu Sans, sans-serif" font-size="23" font-weight="400" fill="#4a5c73">Вимірювання COM–NO / COM–NC</text>
+<rect x="1570" y="705" width="540" height="105" rx="18" fill="#fff" stroke="#d8dfeb" stroke-width="2"/>
+<text x="1595" y="745" font-family="Arial, DejaVu Sans, sans-serif" font-size="23" font-weight="700" fill="#965a12">АДАПТЕР СЕРВО · ФУНКЦІЯ RP2040</text>
+<text x="1595" y="783" font-family="Arial, DejaVu Sans, sans-serif" font-size="23" font-weight="400" fill="#263850">Контакти реле → задане положення</text>
+<rect x="1570" y="875" width="245" height="100" rx="18" fill="#fff" stroke="#d8dfeb" stroke-width="2"/>
+<text x="1590" y="915" font-family="Arial, DejaVu Sans, sans-serif" font-size="27" font-weight="700" fill="#965a12">MG90S</text>
+<text x="1590" y="950" font-family="Arial, DejaVu Sans, sans-serif" font-size="22" font-weight="400" fill="#263850">Макет засувки</text>
+<rect x="1860" y="875" width="250" height="100" rx="18" fill="#fff" stroke="#d8dfeb" stroke-width="2"/>
+<text x="1880" y="915" font-family="Arial, DejaVu Sans, sans-serif" font-size="25" font-weight="700" fill="#965a12">2 КІНЦЕВИКИ</text>
+<text x="1880" y="950" font-family="Arial, DejaVu Sans, sans-serif" font-size="21" font-weight="400" fill="#263850">Відкрито / закрито</text>
+<path d="M 780 335 L 780 400 L 550 400 L 550 530" fill="none" stroke="#3068d8" stroke-width="3.5" stroke-linejoin="round" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<text x="355" y="380" font-family="Arial, DejaVu Sans, sans-serif" font-size="21" font-weight="600" fill="#3068d8">USB · команди агента / події</text>
+<path d="M 1065 335 L 1065 500" fill="none" stroke="#3068d8" stroke-width="3.5" stroke-linejoin="round" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<text x="1085" y="423" font-family="Arial, DejaVu Sans, sans-serif" font-size="21" font-weight="600" fill="#3068d8">USB–UART · 115200</text>
+<path d="M 580 590 L 800 590" fill="none" stroke="#3068d8" stroke-width="3.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="615" y="571" font-family="Arial, DejaVu Sans, sans-serif" font-size="21" font-weight="600" fill="#3068d8">K1–K4</text>
+<path d="M 580 720 L 800 720" fill="none" stroke="#3068d8" stroke-width="3.5" stroke-linejoin="round" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<text x="624" y="698" font-family="Arial, DejaVu Sans, sans-serif" font-size="21" font-weight="600" fill="#3068d8">TRIG / ECHO</text>
+<path d="M 580 914 L 690 914 L 690 795 L 800 795" fill="none" stroke="#3068d8" stroke-width="3.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="115" y="1006" font-family="Arial, DejaVu Sans, sans-serif" font-size="19" font-weight="600" fill="#586f91">Обирається одне джерело ECHO</text>
+<path d="M 1340 590 L 1570 590" fill="none" stroke="#bf761d" stroke-width="3.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="1380" y="567" font-family="Arial, DejaVu Sans, sans-serif" font-size="21" font-weight="600" fill="#a56313">GPIO8</text>
+<path d="M 1840 645 L 1840 705" fill="none" stroke="#bf761d" stroke-width="3.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="1860" y="685" font-family="Arial, DejaVu Sans, sans-serif" font-size="19" font-weight="600" fill="#a56313">Стан контактів</text>
+<path d="M 1690 810 L 1690 875" fill="none" stroke="#bf761d" stroke-width="3.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="1710" y="850" font-family="Arial, DejaVu Sans, sans-serif" font-size="19" font-weight="600" fill="#a56313">PWM</text>
+<path d="M 1815 927 L 1860 927" fill="none" stroke="#bf761d" stroke-width="3.5" stroke-linejoin="round" marker-end="url(#arrow)" stroke-dasharray="9 7"/>
+<path d="M 1990 875 L 1990 810" fill="none" stroke="#16825b" stroke-width="3.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="2007" y="853" font-family="Arial, DejaVu Sans, sans-serif" font-size="18" font-weight="600" fill="#16825b">Стан</text>
+<rect x="800" y="1080" width="540" height="170" rx="18" fill="#fff" stroke="#d8dfeb" stroke-width="2"/>
+<text x="830" y="1125" font-family="Arial, DejaVu Sans, sans-serif" font-size="25" font-weight="700" fill="#344e74">НЕЗАЛЕЖНИЙ КОНТРОЛЬ</text>
+<text x="830" y="1164" font-family="Arial, DejaVu Sans, sans-serif" font-size="23" font-weight="400" fill="#4a5c73">Камера: RGB та зовнішній LED</text>
+<text x="830" y="1196" font-family="Arial, DejaVu Sans, sans-serif" font-size="23" font-weight="400" fill="#4a5c73">Часові виміри: GPIO8 і контакти</text>
+<text x="830" y="1228" font-family="Arial, DejaVu Sans, sans-serif" font-size="23" font-weight="400" fill="#4a5c73">Дані вимірювань → Raspberry Pi</text>
+<path d="M 1065 860 L 1065 1080" fill="none" stroke="#16825b" stroke-width="3.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="1085" y="1005" font-family="Arial, DejaVu Sans, sans-serif" font-size="20" font-weight="600" fill="#16825b">Фактична індикація</text>
+<path d="M 2140 925 L 2170 925 L 2170 1045 L 650 1045 L 650 810 L 335 810 L 335 785" fill="none" stroke="#16825b" stroke-width="3.5" stroke-linejoin="round" marker-end="url(#arrow)" stroke-dasharray="9 7"/>
+<text x="1395" y="1078" font-family="Arial, DejaVu Sans, sans-serif" font-size="21" font-weight="600" fill="#16825b">Кінцевики → модель → наступні ECHO</text>
+<rect x="60" y="1110" width="550" height="110" rx="18" fill="#fff" stroke="#d8dfeb" stroke-width="2"/>
+<text x="85" y="1151" font-family="Arial, DejaVu Sans, sans-serif" font-size="23" font-weight="700" fill="#344e74">ОКРЕМИЙ КАНАЛ ЖИВЛЕННЯ DUT</text>
+<text x="85" y="1189" font-family="Arial, DejaVu Sans, sans-serif" font-size="22" font-weight="400" fill="#263850">Pi керує USB-вимикачем / хабом</text>
+<path d="M 610 1165 L 740 1165 L 740 840 L 800 840" fill="none" stroke="#77839a" stroke-width="3.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="635" y="1146" font-family="Arial, DejaVu Sans, sans-serif" font-size="20" font-weight="600" fill="#66738a">VBUS</text>
+<rect x="60" y="1270" width="2080" height="145" rx="18" fill="#eaf0f8" stroke="#d2ddeb" stroke-width="2"/>
+<text x="90" y="1310" font-family="Arial, DejaVu Sans, sans-serif" font-size="23" font-weight="400" fill="#4a5c73">Синій — команди та сигнали DUT. Помаранчевий — виконавчий канал. Зелений — події та зворотний зв’язок.</text>
+<text x="90" y="1347" font-family="Arial, DejaVu Sans, sans-serif" font-size="23" font-weight="400" fill="#4a5c73">Точні імпульси виконує RP2040; MQTT передає події. Реле SENTRY не перемикає живлення самого DUT.</text>
+<text x="90" y="1384" font-family="Arial, DejaVu Sans, sans-serif" font-size="23" font-weight="400" fill="#4a5c73">Схема функціональна. Живлення серво / реле та узгодження рівнів наведені в описі стенда.</text>
+</svg>
