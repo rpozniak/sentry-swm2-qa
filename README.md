@@ -22,6 +22,7 @@
 | Кейси з передумовами, даними, кроками й очікуваннями | [TEST_CASES.md](docs/TEST_CASES.md) |
 | Вимога → кейс → результат → баг | [TRACEABILITY.md](docs/TRACEABILITY.md) |
 | Результати кожного параметра та посилання на логи | [EXECUTION_RESULTS.md](docs/EXECUTION_RESULTS.md) |
+| Реальний стенд і фото | [Опис обладнання](docs/REAL_STAND.md), [фото](docs/assets/REAL_STAND_2026-10-24.jpg) |
 | HIL для SENTRY: сонар, макет клапана, індикація та CI | [Опис](docs/HIL_STAND.md), [схема PNG](docs/assets/HIL_STAND.png) |
 | Презентація | [PDF](docs/presentation/SENTRY_SWM2_QA.pdf), [PowerPoint](docs/presentation/SENTRY_SWM2_QA.pptx) |
 | Фреймворк і запуск | [tests/README.md](tests/README.md) |
