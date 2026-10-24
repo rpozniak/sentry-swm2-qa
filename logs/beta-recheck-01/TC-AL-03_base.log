@@ -1,0 +1,101 @@
+[00015.261] NOTE PORT /dev/cu.usbmodem5C834702551; FW 2.3.0; UART 115200 8N1
+[00015.261] NOTE CASE TC-AL-03; VARIANT base; FW 2.3.0
+[00015.316] TX whoami
+[00015.322] RX whoami
+[00015.426] RX I (15420) sentry: user: qa_user, access: user
+[00015.644] TX state 1
+[00015.652] RX state 1
+[00015.756] RX W (15750) sentry: W303 already in 1 NORMAL
+[00015.969] TX distance stop
+[00015.973] RX distance stop
+[00016.076] RX W (16070) sentry: W710 measuring is not running
+[00016.293] TX relay auto off
+[00016.303] RX relay auto off
+[00016.409] RX I (16400) sentry: [VALVE] auto off - valve ignores on sonar proximity alarm
+[00016.624] TX relay schedule off
+[00016.633] RX relay schedule off
+[00016.736] RX W (16730) sentry: W605 schedule is not running
+[00016.951] TX relay status
+[00016.963] RX relay status
+[00017.067] RX I (17060) sentry: [VALVE] closed, auto off, cycles 122
+[00017.282] TX lamp timer 0
+[00017.293] RX lamp timer 0
+[00017.396] RX I (17390) sentry: [BEACON] timer cancelled
+[00017.609] TX lamp off
+[00017.613] RX lamp off
+[00017.715] RX W (17710) sentry: W510 lamp already off
+[00017.933] TX health off
+[00017.943] RX health off
+[00018.057] RX I (18050) sentry: [TELEMETRY] auto report off
+[00018.214] NOTE PRECONDITIONS READY
+[00018.269] TX alert ack all
+[00018.273] RX alert ack all
+[00018.376] RX W (18370) sentry: W853 no unacknowledged alerts
+[00018.587] TX alert clear
+[00018.593] RX alert clear
+[00018.695] RX I (18690) sentry: [CIC] cleared
+[00018.861] NOTE PYTEST setup: passed
+[00018.917] TX alert test info
+[00018.923] RX alert test info
+[00019.027] RX I (19020) sentry: [CIC #1 INFO] test: test alert
+[00019.243] TX alert test info
+[00019.253] RX alert test info
+[00019.357] RX I (19350) sentry: [CIC #2 INFO] test: test alert
+[00019.577] TX alert ack 1
+[00019.583] RX alert ack 1
+[00019.685] RX E (19680) sentry: E851 no alert #1
+[00019.895] TX alert list
+[00019.903] RX alert list
+[00020.007] RX I (20000) sentry: [CIC] 2 alerts, 2 unacknowledged:
+[00020.013] RX I (20000) sentry:   #1   22:08:34 INFO     * test    test alert
+[00020.018] RX I (20000) sentry:   #2   22:08:35 INFO     * test    test alert
+[00020.188] NOTE PYTEST call: failed
+[00020.243] TX alert ack all
+[00020.253] RX alert ack all
+[00020.356] RX I (20350) sentry: [CIC] 2 alerts acknowledged
+[00020.569] TX alert clear
+[00020.573] RX alert clear
+[00020.648] RX I (20640) sentry: [NAV] depth 41.8 m, heading 274, speed 3.1 kn
+[00020.675] RX I (20670) sentry: [CIC] cleared
+[00020.832] NOTE CLEANUP
+[00020.882] TX whoami
+[00020.892] RX whoami
+[00020.996] RX I (20990) sentry: user: qa_user, access: user
+[00021.210] TX state 1
+[00021.212] RX state 1
+[00021.316] RX W (21310) sentry: W303 already in 1 NORMAL
+[00021.534] TX distance stop
+[00021.543] RX distance stop
+[00021.646] RX W (21640) sentry: W710 measuring is not running
+[00021.857] TX relay schedule off
+[00021.863] RX relay schedule off
+[00021.966] RX W (21960) sentry: W605 schedule is not running
+[00022.179] TX relay auto off
+[00022.183] RX relay auto off
+[00022.289] RX I (22280) sentry: [VALVE] auto off - valve ignores on sonar proximity alarm
+[00022.506] TX relay status
+[00022.513] RX relay status
+[00022.617] RX I (22610) sentry: [VALVE] closed, auto off, cycles 122
+[00022.833] TX lamp timer 0
+[00022.843] RX lamp timer 0
+[00022.946] RX I (22940) sentry: [BEACON] timer cancelled
+[00023.163] TX lamp off
+[00023.172] RX lamp off
+[00023.275] RX W (23270) sentry: W510 lamp already off
+[00023.494] TX lamp mode solid
+[00023.503] RX lamp mode solid
+[00023.606] RX I (23600) sentry: [BEACON] mode: solid
+[00023.820] TX lamp color white
+[00023.832] RX lamp color white
+[00023.938] RX I (23930) sentry: [BEACON] color: white (255,255,255)
+[00024.156] TX lamp brightness 50
+[00024.163] RX lamp brightness 50
+[00024.267] RX I (24260) sentry: [BEACON] brightness: 50%
+[00024.485] TX health interval 30
+[00024.493] RX health interval 30
+[00024.597] RX I (24590) sentry: [TELEMETRY] interval 30 s
+[00024.811] TX health on
+[00024.822] RX health on
+[00024.936] RX I (24930) sentry: [TELEMETRY] auto report on
+[00025.098] NOTE CLEANUP COMPLETE
+[00025.099] NOTE PYTEST teardown: passed

@@ -1,6 +1,6 @@
 # Матриця трасування та виконання
 
-36 кейсів: 31 застосовується до 2.1.0, 35 — до 2.3.0. Для застосовних виконань початковий статус Not Run; N/A визначено за версійними вимогами PRD. Параметризовані варіанти обліковуються окремо.
+36 кейсів: 31 застосовується до 2.1.0, 35 — до 2.3.0. Автоматичні результати двох версій наведені нижче; [параметризовані виконання та логи](EXECUTION_RESULTS.md) обліковуються окремо. Ручні кейси — Not Run.
 
 Кейси: [TEST_CASES.md](TEST_CASES.md). Правила виконання: [TEST_PLAN.md](TEST_PLAN.md).
 
@@ -8,42 +8,42 @@
 
 | Кейс | Вимога PRD | Перевірка | Метод | 2.1.0 | 2.3.0 | Баг / доказ |
 |---|---|---|---|---|---|---|
-| TC-LM-01 | LM-1, LM-7 | Зміна логічного стану лампи | Auto | Not Run | Not Run | — |
-| TC-LM-02 | LM-1 | Попередження при повторному on або off | Auto | Not Run | Not Run | — |
-| TC-LM-03 | LM-2, LM-7 | Застосування допустимого RGB | Auto | Not Run | Not Run | — |
-| TC-LM-04 | LM-2 | Відмова для некоректного кольору | Auto | Not Run | Not Run | — |
-| TC-LM-05 | LM-3, LM-7 | Приймання яскравості в межах діапазону | Auto | Not Run | Not Run | — |
-| TC-LM-06 | LM-3 | Відмова для яскравості поза діапазоном | Auto | Not Run | Not Run | — |
-| TC-LM-07 | LM-5, LM-7 | Логічне вимкнення лампи після завершення таймера | Auto | Not Run | Not Run | — |
-| TC-LM-08 | LM-5, LM-7 | Скасування таймера запобігає автовимкненню | Auto | Not Run | Not Run | — |
+| TC-LM-01 | LM-1, LM-7 | Зміна логічного стану лампи | Auto | Pass | Pass | [Виконання](EXECUTION_RESULTS.md#tc-lm-01) |
+| TC-LM-02 | LM-1 | Попередження при повторному on або off | Auto | Pass | Pass | [Виконання](EXECUTION_RESULTS.md#tc-lm-02) |
+| TC-LM-03 | LM-2, LM-7 | Застосування допустимого RGB | Auto | Pass | Pass | [Виконання](EXECUTION_RESULTS.md#tc-lm-03) |
+| TC-LM-04 | LM-2 | Відмова для некоректного кольору | Auto | Pass | Pass | [Виконання](EXECUTION_RESULTS.md#tc-lm-04) |
+| TC-LM-05 | LM-3, LM-7 | Приймання яскравості в межах діапазону | Auto | Pass | Pass | [Виконання](EXECUTION_RESULTS.md#tc-lm-05) |
+| TC-LM-06 | LM-3 | Відмова для яскравості поза діапазоном | Auto | Pass | Pass | [Виконання](EXECUTION_RESULTS.md#tc-lm-06) |
+| TC-LM-07 | LM-5, LM-7 | Логічне вимкнення лампи після завершення таймера | Auto | Pass | Pass | [Виконання](EXECUTION_RESULTS.md#tc-lm-07); [BUG-LM-01](../bugs/BUG-LM-01.md) |
+| TC-LM-08 | LM-5, LM-7 | Скасування таймера запобігає автовимкненню | Auto | Pass | Pass | [Виконання](EXECUTION_RESULTS.md#tc-lm-08) |
 | TC-LM-09 | LM-2 | Фізичний колір RGB LED відповідає назві | Manual | Not Run | Not Run | — |
 | TC-LM-10 | LM-3, LM-4 | Яскравість фізично застосовується у вибраному режимі | Manual | Not Run | Not Run | — |
-| TC-RL-01 | RL-1, RL-2 | Команда змінює логічний стан реле | Auto | Not Run | Not Run | — |
+| TC-RL-01 | RL-1, RL-2 | Команда змінює логічний стан реле | Auto | Pass | Pass | [Виконання](EXECUTION_RESULTS.md#tc-rl-01) |
 | TC-RL-02 | RL-1 | Зовнішній LED відображає стан реле | Manual | Not Run | Not Run | — |
 | TC-RL-03 | RL-1 | Модуль реле перемикає фізичні контакти | Manual | Not Run | Not Run | — |
-| TC-RL-04 | RL-3 | Відмова для тривалості pulse поза діапазоном | Auto | Not Run | Not Run | — |
-| TC-RL-05 | RL-3 | Реле виконує імпульс заданої тривалості | Auto | Not Run | Not Run | — |
-| TC-RL-06 | RL-2 | Одне перемикання збільшує cycles на одиницю | Auto | Not Run | Not Run | — |
-| TC-RL-07 | RL-2 | Лічильник cycles зберігається після reboot | Auto | Not Run | Not Run | — |
-| TC-RL-08 | RL-4 | Розклад формує цикл ON/off | Auto | Not Run | Not Run | — |
-| TC-RL-09 | RL-4 | Відмова для параметрів schedule поза діапазоном | Auto | Not Run | Not Run | — |
-| TC-HL-01 | HL-1, HL-3 | Звіт health now має поля своєї версії | Auto | Not Run | Not Run | — |
-| TC-HL-02 | HL-3 | Межі 10 і 300 приймаються як інтервал | Auto | Not Run | Not Run | — |
-| TC-HL-03 | HL-3 | Відмова для інтервалу поза діапазоном | Auto | Not Run | Not Run | — |
-| TC-HL-04 | HL-1, HL-3 | Health off припиняє періодичні звіти | Auto | Not Run | Not Run | — |
-| TC-HL-05 | HL-3 | Інтервал зберігається після reboot | Auto | Not Run | Not Run | — |
-| TC-AU-01 | AU-2, AU-4 | Правильні дані дозволяють вхід у профіль | Auto | Not Run | Not Run | — |
-| TC-AU-02 | AU-2 | Три невдалі спроби блокують вхід незалежно від login | Auto | Not Run | Not Run | — |
-| TC-AU-03 | AU-5 | Зміна пароля відхиляється з неправильним старим паролем | Auto | Not Run | Not Run | — |
-| TC-AU-04 | AU-5 | Новий пароль поза межами довжини відхиляється | Auto | Not Run | Not Run | — |
-| TC-AU-05 | AU-5 | Новий пароль працює після reboot | Auto | Not Run | Not Run | — |
-| TC-AU-06 | AC-1, AU-3 | Logout закриває доступ до захищеної команди | Auto | Not Run | Not Run | — |
-| TC-AL-01 | Розділ 1 | Alert-команди повідомляють про відсутню реалізацію у stable | Auto | Not Run | N/A | — |
-| TC-AL-02 | AL-1, AL-2, AL-4 | Тестове сповіщення створюється з вибраним рівнем | Auto | N/A | Not Run | — |
-| TC-AL-03 | AL-2, AL-3 | Ack за ID підтверджує саме вибраний запис | Auto | N/A | Not Run | — |
-| TC-AL-04 | AL-3 | Повторне підтвердження запису повертає попередження | Auto | N/A | Not Run | — |
-| TC-AL-05 | AL-4 | Clear відхиляється за наявності непідтвердженого запису | Auto | N/A | Not Run | — |
-| TC-AL-06 | AL-2, AL-4 | Clear очищає список після підтвердження всіх записів | Auto | N/A | Not Run | — |
+| TC-RL-04 | RL-3 | Відмова для тривалості pulse поза діапазоном | Auto | Fail | Fail | [Виконання](EXECUTION_RESULTS.md#tc-rl-04); [BUG-RL-01](../bugs/BUG-RL-01.md) |
+| TC-RL-05 | RL-3 | Реле виконує імпульс заданої тривалості | Auto | Pass | Pass | [Виконання](EXECUTION_RESULTS.md#tc-rl-05) |
+| TC-RL-06 | RL-2 | Одне перемикання збільшує cycles на одиницю | Auto | Fail | Pass | [Виконання](EXECUTION_RESULTS.md#tc-rl-06); [BUG-RL-02](../bugs/BUG-RL-02.md) |
+| TC-RL-07 | RL-2 | Лічильник cycles зберігається після reboot | Auto | Pass | Pass | [Виконання](EXECUTION_RESULTS.md#tc-rl-07) |
+| TC-RL-08 | RL-4 | Розклад формує цикл ON/off | Auto | Pass | Pass | [Виконання](EXECUTION_RESULTS.md#tc-rl-08) |
+| TC-RL-09 | RL-4 | Відмова для параметрів schedule поза діапазоном | Auto | Pass | Pass | [Виконання](EXECUTION_RESULTS.md#tc-rl-09) |
+| TC-HL-01 | HL-1, HL-3 | Звіт health now має поля своєї версії | Auto | Pass | Pass | [Виконання](EXECUTION_RESULTS.md#tc-hl-01) |
+| TC-HL-02 | HL-3 | Межі 10 і 300 приймаються як інтервал | Auto | Fail | Pass | [Виконання](EXECUTION_RESULTS.md#tc-hl-02); [BUG-HL-01](../bugs/BUG-HL-01.md) |
+| TC-HL-03 | HL-3 | Відмова для інтервалу поза діапазоном | Auto | Pass | Pass | [Виконання](EXECUTION_RESULTS.md#tc-hl-03) |
+| TC-HL-04 | HL-1, HL-3 | Health off припиняє періодичні звіти | Auto | Pass | Pass | [Виконання](EXECUTION_RESULTS.md#tc-hl-04) |
+| TC-HL-05 | HL-3 | Інтервал зберігається після reboot | Auto | Pass | Pass | [Виконання](EXECUTION_RESULTS.md#tc-hl-05) |
+| TC-AU-01 | AU-2, AU-4 | Правильні дані дозволяють вхід у профіль | Auto | Pass | Pass | [Виконання](EXECUTION_RESULTS.md#tc-au-01) |
+| TC-AU-02 | AU-2 | Три невдалі спроби блокують вхід незалежно від login | Auto | Pass | Pass | [Виконання](EXECUTION_RESULTS.md#tc-au-02) |
+| TC-AU-03 | AU-5 | Зміна пароля відхиляється з неправильним старим паролем | Auto | Pass | Pass | [Виконання](EXECUTION_RESULTS.md#tc-au-03) |
+| TC-AU-04 | AU-5 | Новий пароль поза межами довжини відхиляється | Auto | Pass | Pass | [Виконання](EXECUTION_RESULTS.md#tc-au-04) |
+| TC-AU-05 | AU-5 | Новий пароль працює після reboot | Auto | Fail | Pass | [Виконання](EXECUTION_RESULTS.md#tc-au-05); [BUG-AU-01](../bugs/BUG-AU-01.md) |
+| TC-AU-06 | AC-1, AU-3 | Logout закриває доступ до захищеної команди | Auto | Pass | Pass | [Виконання](EXECUTION_RESULTS.md#tc-au-06) |
+| TC-AL-01 | Розділ 1 | Alert-команди повідомляють про відсутню реалізацію у stable | Auto | Pass | N/A | [Виконання](EXECUTION_RESULTS.md#tc-al-01) |
+| TC-AL-02 | AL-1, AL-2, AL-4 | Тестове сповіщення створюється з вибраним рівнем | Auto | N/A | Pass | [Виконання](EXECUTION_RESULTS.md#tc-al-02) |
+| TC-AL-03 | AL-2, AL-3 | Ack за ID підтверджує саме вибраний запис | Auto | N/A | Fail | [Виконання](EXECUTION_RESULTS.md#tc-al-03); [BUG-AL-01](../bugs/BUG-AL-01.md) |
+| TC-AL-04 | AL-3 | Повторне підтвердження запису повертає попередження | Auto | N/A | Fail | [Виконання](EXECUTION_RESULTS.md#tc-al-04); [BUG-AL-01](../bugs/BUG-AL-01.md) |
+| TC-AL-05 | AL-4 | Clear відхиляється за наявності непідтвердженого запису | Auto | N/A | Pass | [Виконання](EXECUTION_RESULTS.md#tc-al-05) |
+| TC-AL-06 | AL-2, AL-4 | Clear очищає список після підтвердження всіх записів | Auto | N/A | Pass | [Виконання](EXECUTION_RESULTS.md#tc-al-06) |
 
 TC-AL-01 перевіряє очікувану E099 лише на stable. TC-AL-02–TC-AL-06 перевіряють реалізацію alerts лише на beta. Без виконання TC-AL-01 його результат не вважається Pass.
 
@@ -75,22 +75,21 @@ TC-AL-01 перевіряє очікувану E099 лише на stable. TC-AL-
 
 ID вимоги в матриці означає заплановану перевірку описаної частини поведінки; він не є твердженням про повне покриття або успішний запуск.
 
-## Запис окремого виконання
+## Окремі виконання
 
-| Запуск / стенд | Версія | Кейс / параметр | Фактичний результат | Статус | Доказ | Баг |
-|---|---|---|---|---|---|---|
-| — | — | — | — | Not Run | — | — |
-
-Для кожного варіанта створюється свій рядок. TC-RL-03 без підключеного модуля — Blocked; результати UART та LED з інших кейсів не переносяться на контакти.
+[Результати кожного варіанта та UART-логи](EXECUTION_RESULTS.md). Повторні відтворення наведені в баг-репортах.
 
 ## Матриця багів
 
-| ID | Назва | 2.1.0 | 2.3.0 | Регресія | Доказ |
-|---|---|---|---|---|---|
-| — | — | — | — | — | — |
-
-Таблиця заповнюється після відтворення. Регресія потребує підтвердженого порівняння версій за однакових умов.
+| ID | Назва | 2.1.0 | 2.3.0 | Регресія |
+|---|---|---|---|---|
+| [BUG-LM-01](../bugs/BUG-LM-01.md) | Повідомлення lamp timer вказує мілісекунди замість секунд | Є | Не відтворено | Не підтверджена |
+| [BUG-RL-01](../bugs/BUG-RL-01.md) | relay pulse 99 запускає імпульс замість E603 | Є | Є | Не підтверджена |
+| [BUG-RL-02](../bugs/BUG-RL-02.md) | Одне перемикання реле збільшує cycles на 2 | Є | Не відтворено | Не підтверджена |
+| [BUG-HL-01](../bugs/BUG-HL-01.md) | health interval 300 відхиляється на допустимій верхній межі | Є | Не відтворено | Не підтверджена |
+| [BUG-AU-01](../bugs/BUG-AU-01.md) | Зміна пароля не зберігається після reboot | Є | Не відтворено | Не підтверджена |
+| [BUG-AL-01](../bugs/BUG-AL-01.md) | alert ack за ID повертає E851 для наявного сповіщення | N/A | Є | Не підтверджена |
 
 ## Висновок
 
-Рішення beta → stable заповнюється за результатами виконаних перевірок і впливом знайдених дефектів.
+NO-GO для 2.3.0: виконується недопустимий pulse 99, а ack наявного ID повертає E851. Ручні перевірки індикації та контактів виконуються наступним етапом.

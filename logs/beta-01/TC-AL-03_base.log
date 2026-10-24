@@ -1,0 +1,100 @@
+[00712.797] NOTE PORT /dev/cu.usbmodem5C834702551; FW 2.3.0; UART 115200 8N1
+[00712.797] NOTE CASE TC-AL-03; VARIANT base; FW 2.3.0
+[00712.848] TX whoami
+[00712.857] RX whoami
+[00712.961] RX I (54715) sentry: user: qa_user, access: user
+[00713.178] TX state 1
+[00713.188] RX state 1
+[00713.291] RX W (55045) sentry: W303 already in 1 NORMAL
+[00713.507] TX distance stop
+[00713.518] RX distance stop
+[00713.621] RX W (55375) sentry: W710 measuring is not running
+[00713.839] TX relay auto off
+[00713.848] RX relay auto off
+[00713.955] RX I (55705) sentry: [VALVE] auto off - valve ignores on sonar proximity alarm
+[00714.169] TX relay schedule off
+[00714.178] RX relay schedule off
+[00714.282] RX W (56035) sentry: W605 schedule is not running
+[00714.498] TX relay status
+[00714.508] RX relay status
+[00714.612] RX I (56365) sentry: [VALVE] closed, auto off, cycles 120
+[00714.823] TX lamp timer 0
+[00714.828] RX lamp timer 0
+[00714.931] RX I (56685) sentry: [BEACON] timer cancelled
+[00715.151] TX lamp off
+[00715.158] RX lamp off
+[00715.261] RX W (57015) sentry: W510 lamp already off
+[00715.480] TX health off
+[00715.488] RX health off
+[00715.602] RX I (57355) sentry: [TELEMETRY] auto report off
+[00715.759] NOTE PRECONDITIONS READY
+[00715.815] TX alert ack all
+[00715.818] RX alert ack all
+[00715.922] RX W (57675) sentry: W853 no unacknowledged alerts
+[00716.136] TX alert clear
+[00716.147] RX alert clear
+[00716.250] RX I (58005) sentry: [CIC] cleared
+[00716.415] NOTE PYTEST setup: passed
+[00716.469] TX alert test info
+[00716.478] RX alert test info
+[00716.582] RX I (58335) sentry: [CIC #4 INFO] test: test alert
+[00716.798] TX alert test info
+[00716.809] RX alert test info
+[00716.912] RX I (58665) sentry: [CIC #5 INFO] test: test alert
+[00717.127] TX alert ack 4
+[00717.138] RX alert ack 4
+[00717.240] RX E (58995) sentry: E851 no alert #4
+[00717.457] TX alert list
+[00717.468] RX alert list
+[00717.573] RX I (59325) sentry: [CIC] 2 alerts, 2 unacknowledged:
+[00717.578] RX I (59325) sentry:   #4   22:03:50 INFO     * test    test alert
+[00717.583] RX I (59325) sentry:   #5   22:03:51 INFO     * test    test alert
+[00717.751] NOTE PYTEST call: failed
+[00717.807] TX alert ack all
+[00717.818] RX alert ack all
+[00717.921] RX I (59675) sentry: [CIC] 2 alerts acknowledged
+[00718.134] TX alert clear
+[00718.138] RX alert clear
+[00718.240] RX I (59995) sentry: [CIC] cleared
+[00718.401] NOTE CLEANUP
+[00718.455] TX whoami
+[00718.457] RX whoami
+[00718.561] RX I (60315) sentry: user: qa_user, access: user
+[00718.776] TX state 1
+[00718.788] RX state 1
+[00718.891] RX W (60645) sentry: W303 already in 1 NORMAL
+[00719.106] TX distance stop
+[00719.118] RX distance stop
+[00719.221] RX W (60975) sentry: W710 measuring is not running
+[00719.436] TX relay schedule off
+[00719.448] RX relay schedule off
+[00719.551] RX W (61305) sentry: W605 schedule is not running
+[00719.769] TX relay auto off
+[00719.778] RX relay auto off
+[00719.884] RX I (61635) sentry: [VALVE] auto off - valve ignores on sonar proximity alarm
+[00720.099] TX relay status
+[00720.108] RX relay status
+[00720.212] RX I (61965) sentry: [VALVE] closed, auto off, cycles 120
+[00720.425] TX lamp timer 0
+[00720.428] RX lamp timer 0
+[00720.531] RX I (62285) sentry: [BEACON] timer cancelled
+[00720.749] TX lamp off
+[00720.758] RX lamp off
+[00720.861] RX W (62615) sentry: W510 lamp already off
+[00721.077] TX lamp mode solid
+[00721.088] RX lamp mode solid
+[00721.191] RX I (62945) sentry: [BEACON] mode: solid
+[00721.405] TX lamp color white
+[00721.417] RX lamp color white
+[00721.523] RX I (63275) sentry: [BEACON] color: white (255,255,255)
+[00721.739] TX lamp brightness 50
+[00721.748] RX lamp brightness 50
+[00721.852] RX I (63605) sentry: [BEACON] brightness: 50%
+[00722.068] TX health interval 30
+[00722.078] RX health interval 30
+[00722.182] RX I (63935) sentry: [TELEMETRY] interval 30 s
+[00722.398] TX health on
+[00722.408] RX health on
+[00722.522] RX I (64275) sentry: [TELEMETRY] auto report on
+[00722.683] NOTE CLEANUP COMPLETE
+[00722.683] NOTE PYTEST teardown: passed

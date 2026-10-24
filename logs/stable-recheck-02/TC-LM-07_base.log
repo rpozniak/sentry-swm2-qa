@@ -1,0 +1,97 @@
+[00006.836] NOTE PORT /dev/cu.usbmodem5C834702551; FW 2.1.0; UART 115200 8N1
+[00006.836] NOTE CASE TC-LM-07; VARIANT base; FW 2.1.0
+[00006.891] TX whoami
+[00006.900] RX whoami
+[00007.004] RX I (6999) sentry: user: qa_user, access: user
+[00007.221] TX state 1
+[00007.230] RX state 1
+[00007.334] RX W (7329) sentry: W303 already in 1 NORMAL
+[00007.547] TX distance stop
+[00007.551] RX distance stop
+[00007.654] RX W (7649) sentry: W710 measuring is not running
+[00007.868] TX relay auto off
+[00007.871] RX relay auto off
+[00007.977] RX I (7969) sentry: [VALVE] auto off - valve ignores on sonar proximity alarm
+[00008.187] TX relay schedule off
+[00008.191] RX relay schedule off
+[00008.294] RX W (8289) sentry: W605 schedule is not running
+[00008.505] TX relay status
+[00008.511] RX relay status
+[00008.615] RX I (8609) sentry: [VALVE] closed, auto off, cycles 80
+[00008.825] TX lamp timer 0
+[00008.831] RX lamp timer 0
+[00008.934] RX I (8929) sentry: [BEACON] timer cancelled
+[00009.146] TX lamp off
+[00009.151] RX lamp off
+[00009.254] RX W (9249) sentry: W510 lamp already off
+[00009.467] TX health off
+[00009.471] RX health off
+[00009.585] RX I (9579) sentry: [TELEMETRY] auto report off
+[00009.747] NOTE PRECONDITIONS READY
+[00009.797] TX lamp mode solid
+[00009.801] RX lamp mode solid
+[00009.904] RX I (9899) sentry: [BEACON] mode: solid
+[00010.121] TX lamp brightness 50
+[00010.131] RX lamp brightness 50
+[00010.235] RX I (10229) sentry: [BEACON] brightness: 50%
+[00010.439] TX lamp color white
+[00010.451] RX lamp color white
+[00010.556] RX I (10549) sentry: [BEACON] color: white (255,255,255)
+[00010.769] TX lamp on
+[00010.780] RX lamp on
+[00010.886] RX I (10879) sentry: [BEACON] on (command) solid, 50%, color (255,255,255)
+[00011.043] NOTE PYTEST setup: passed
+[00011.099] TX lamp timer 5
+[00011.110] RX lamp timer 5
+[00011.214] RX I (11209) sentry: [BEACON] auto-off in 5 ms
+[00012.175] TX lamp status
+[00012.181] RX lamp status
+[00012.288] RX I (12279) sentry: [BEACON] ON, color (255,255,255), brightness 50%, mode solid, timer 3 s left
+[00016.224] RX I (16219) sentry: [BEACON] off (timer expired)
+[00017.183] TX lamp status
+[00017.191] RX lamp status
+[00017.298] RX I (17289) sentry: [BEACON] off, color (255,255,255), brightness 50%, mode solid, timer off
+[00017.459] NOTE PYTEST call: passed
+[00017.467] NOTE CLEANUP
+[00017.519] TX whoami
+[00017.530] RX whoami
+[00017.634] RX I (17629) sentry: user: qa_user, access: user
+[00017.849] TX state 1
+[00017.861] RX state 1
+[00017.964] RX W (17959) sentry: W303 already in 1 NORMAL
+[00018.179] TX distance stop
+[00018.191] RX distance stop
+[00018.294] RX W (18289) sentry: W710 measuring is not running
+[00018.509] TX relay schedule off
+[00018.521] RX relay schedule off
+[00018.624] RX W (18619) sentry: W605 schedule is not running
+[00018.837] TX relay auto off
+[00018.841] RX relay auto off
+[00018.947] RX I (18939) sentry: [VALVE] auto off - valve ignores on sonar proximity alarm
+[00019.163] TX relay status
+[00019.171] RX relay status
+[00019.275] RX I (19269) sentry: [VALVE] closed, auto off, cycles 80
+[00019.491] TX lamp timer 0
+[00019.501] RX lamp timer 0
+[00019.604] RX I (19599) sentry: [BEACON] timer cancelled
+[00019.818] TX lamp off
+[00019.820] RX lamp off
+[00019.923] RX W (19919) sentry: W510 lamp already off
+[00020.138] TX lamp mode solid
+[00020.150] RX lamp mode solid
+[00020.254] RX I (20249) sentry: [BEACON] mode: solid
+[00020.468] TX lamp color white
+[00020.480] RX lamp color white
+[00020.586] RX I (20579) sentry: [BEACON] color: white (255,255,255)
+[00020.646] RX I (20639) sentry: [NAV] depth 42.0 m, heading 272, speed 2.9 kn
+[00020.863] TX lamp brightness 50
+[00020.871] RX lamp brightness 50
+[00020.975] RX I (20969) sentry: [BEACON] brightness: 50%
+[00021.188] TX health interval 30
+[00021.200] RX health interval 30
+[00021.304] RX I (21299) sentry: [TELEMETRY] interval 30 s
+[00021.520] TX health on
+[00021.530] RX health on
+[00021.644] RX I (21639) sentry: [TELEMETRY] auto report on
+[00021.806] NOTE CLEANUP COMPLETE
+[00021.806] NOTE PYTEST teardown: passed

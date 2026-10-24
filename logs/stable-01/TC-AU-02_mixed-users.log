@@ -1,0 +1,106 @@
+[00557.955] NOTE PORT /dev/cu.usbmodem5C834702551; FW 2.1.0; UART 115200 8N1
+[00557.955] NOTE CASE TC-AU-02; VARIANT mixed-users; FW 2.1.0
+[00558.010] TX whoami
+[00558.015] RX whoami
+[00558.118] RX I (64503) sentry: user: qa_user, access: user
+[00558.352] TX state 1
+[00558.355] RX state 1
+[00558.458] RX W (64843) sentry: W303 already in 1 NORMAL
+[00558.690] TX distance stop
+[00558.695] RX distance stop
+[00558.798] RX W (65183) sentry: W710 measuring is not running
+[00559.029] TX relay auto off
+[00559.035] RX relay auto off
+[00559.142] RX I (65523) sentry: [VALVE] auto off - valve ignores on sonar proximity alarm
+[00559.361] TX relay schedule off
+[00559.366] RX relay schedule off
+[00559.468] RX W (65853) sentry: W605 schedule is not running
+[00559.708] TX relay status
+[00559.715] RX relay status
+[00559.819] RX I (66203) sentry: [VALVE] closed, auto off, cycles 68
+[00560.049] TX lamp timer 0
+[00560.055] RX lamp timer 0
+[00560.158] RX I (66543) sentry: [BEACON] timer cancelled
+[00560.378] TX lamp off
+[00560.385] RX lamp off
+[00560.488] RX W (66873) sentry: W510 lamp already off
+[00560.711] TX health off
+[00560.715] RX health off
+[00560.829] RX I (67213) sentry: [TELEMETRY] auto report off
+[00560.994] NOTE PRECONDITIONS READY
+[00560.996] NOTE PYTEST setup: passed
+[00561.055] TX logout
+[00561.065] RX logout
+[00561.169] RX I (67553) sentry: [AUTH] operator qa_user relieved from watch
+[00561.403] TX login qa_no1 ***
+[00561.415] RX login qa_no1 ***
+[00561.521] RX E (67903) sentry: E209 wrong login or *** Attempts: 1/3
+[00561.759] TX login qa_no2 ***
+[00561.766] RX login qa_no2 ***
+[00561.871] RX E (68253) sentry: E209 wrong login or *** Attempts: 2/3
+[00562.104] TX login qa_user ***
+[00562.116] RX login qa_user ***
+[00562.221] RX E (68603) sentry: E209 wrong login or *** Attempts: 3/3
+[00562.226] RX E (68603) sentry: E210 too many attempts, account locked for 30 s
+[00562.444] TX login qa_user ***
+[00562.456] RX login qa_user ***
+[00562.559] RX E (68943) sentry: E207 account locked. Try again in 30 s
+[00562.786] TX login qa_no1 ***
+[00562.796] RX login qa_no1 ***
+[00562.899] RX E (69283) sentry: E207 account locked. Try again in 30 s
+[00563.079] NOTE Wait beyond the 30-second lockout before restoring the session
+[00594.186] TX whoami
+[00594.194] RX whoami
+[00594.297] RX I (100683) sentry: not logged in
+[00594.526] TX reconnect
+[00594.534] RX reconnect
+[00594.638] RX W (101023) sentry: W114 already connected
+[00594.697] TX login qa_user ***
+[00594.706] RX login qa_user ***
+[00594.810] RX I (101193) sentry: [AUTH] operator qa_user on watch, console 2
+[00595.043] TX whoami
+[00595.054] RX whoami
+[00595.158] RX I (101543) sentry: user: qa_user, access: user
+[00595.328] NOTE PYTEST call: passed
+[00595.329] NOTE CLEANUP
+[00595.390] TX whoami
+[00595.394] RX whoami
+[00595.498] RX I (101883) sentry: user: qa_user, access: user
+[00595.730] TX state 1
+[00595.734] RX state 1
+[00595.837] RX W (102223) sentry: W303 already in 1 NORMAL
+[00596.061] TX distance stop
+[00596.065] RX distance stop
+[00596.168] RX W (102553) sentry: W710 measuring is not running
+[00596.407] TX relay schedule off
+[00596.415] RX relay schedule off
+[00596.518] RX W (102903) sentry: W605 schedule is not running
+[00596.750] TX relay auto off
+[00596.755] RX relay auto off
+[00596.861] RX I (103243) sentry: [VALVE] auto off - valve ignores on sonar proximity alarm
+[00597.083] TX relay status
+[00597.094] RX relay status
+[00597.198] RX I (103583) sentry: [VALVE] closed, auto off, cycles 68
+[00597.431] TX lamp timer 0
+[00597.434] RX lamp timer 0
+[00597.537] RX I (103923) sentry: [BEACON] timer cancelled
+[00597.774] TX lamp off
+[00597.784] RX lamp off
+[00597.887] RX W (104273) sentry: W510 lamp already off
+[00598.122] TX lamp mode solid
+[00598.125] RX lamp mode solid
+[00598.228] RX I (104613) sentry: [BEACON] mode: solid
+[00598.451] TX lamp color white
+[00598.455] RX lamp color white
+[00598.559] RX I (104943) sentry: [BEACON] color: white (255,255,255)
+[00598.786] TX lamp brightness 50
+[00598.795] RX lamp brightness 50
+[00598.898] RX I (105283) sentry: [BEACON] brightness: 50%
+[00599.128] TX health interval 30
+[00599.135] RX health interval 30
+[00599.238] RX I (105623) sentry: [TELEMETRY] interval 30 s
+[00599.463] TX health on
+[00599.474] RX health on
+[00599.588] RX I (105973) sentry: [TELEMETRY] auto report on
+[00599.755] NOTE CLEANUP COMPLETE
+[00599.756] NOTE PYTEST teardown: passed

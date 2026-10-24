@@ -1,0 +1,256 @@
+[00074.930] NOTE PORT /dev/cu.usbmodem5C834702551; FW 2.1.0; UART 115200 8N1
+[00074.930] NOTE CASE TC-AU-05; VARIANT 32; FW 2.1.0
+[00074.985] TX whoami
+[00074.996] RX whoami
+[00075.100] RX I (12983) sentry: user: qa_user, access: user
+[00075.312] TX state 1
+[00075.316] RX state 1
+[00075.420] RX W (13303) sentry: W303 already in 1 NORMAL
+[00075.633] TX distance stop
+[00075.637] RX distance stop
+[00075.740] RX W (13623) sentry: W710 measuring is not running
+[00075.957] TX relay auto off
+[00075.967] RX relay auto off
+[00076.073] RX I (13953) sentry: [VALVE] auto off - valve ignores on sonar proximity alarm
+[00076.292] TX relay schedule off
+[00076.297] RX relay schedule off
+[00076.400] RX W (14283) sentry: W605 schedule is not running
+[00076.615] TX relay status
+[00076.627] RX relay status
+[00076.731] RX I (14613) sentry: [VALVE] closed, auto off, cycles 92
+[00076.942] TX lamp timer 0
+[00076.947] RX lamp timer 0
+[00077.050] RX I (14933) sentry: [BEACON] timer cancelled
+[00077.268] TX lamp off
+[00077.276] RX lamp off
+[00077.379] RX W (15263) sentry: W510 lamp already off
+[00077.595] TX health off
+[00077.607] RX health off
+[00077.721] RX I (15603) sentry: [TELEMETRY] auto report off
+[00077.883] NOTE PRECONDITIONS READY
+[00077.884] NOTE PYTEST setup: passed
+[00077.884] NOTE Change original P0 to P32; both values are masked
+[00077.937] TX passwd *** ***
+[00077.950] RX passwd *** ***
+[00078.051] RX I (15933) sentry: [AUTH] password changed
+[00078.211] NOTE After reboot, login must succeed with the changed P32
+[00078.266] TX reboot
+[00078.276] RX reboot
+[00078.379] RX I (16263) sentry: rebooting in 3...
+[00079.379] RX I (17263) sentry: rebooting in 2...
+[00080.379] RX I (18263) sentry: rebooting in 1...
+[00081.382] RX I (19263) wifi:state: run -> init (0x0)
+[00081.387] RX I (19263) wifi:pm stop, total sleep time: 14703606 us / 17252064 us
+[00081.387] RX 
+[00081.393] RX I (19263) wifi:<ba-del>idx:0, tid:0
+[00081.397] RX I (19263) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[00081.431] RX I (19313) wifi:flush txq
+[00081.431] RX I (19313) wifi:stop sw txq
+[00081.433] RX I (19313) wifi:lmac stop hw txq
+[00081.445] RX ESP-ROM:esp32s3-20210327
+[00081.445] RX Build:Mar 27 2021
+[00081.451] RX rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+[00081.451] RX Saved PC:0x4037d344
+[00081.456] RX SPIWP:0xee
+[00081.456] RX mode:DIO, clock div:1
+[00081.456] RX load:0x3fce2820,len:0x14f0
+[00081.462] RX load:0x403c8700,len:0xda0
+[00081.462] RX load:0x403cb700,len:0x2fa0
+[00081.462] RX entry 0x403c8908
+[00081.468] RX I (29) boot: ESP-IDF v6.0.1 2nd stage bootloader
+[00081.474] RX I (29) boot: compile time Oct  6 2026 02:15:01
+[00081.479] RX I (29) boot: Multicore bootloader
+[00081.479] RX I (29) boot: chip revision: v0.2
+[00081.485] RX I (32) boot: efuse block revision: v1.3
+[00081.485] RX I (36) boot.esp32s3: Boot SPI Speed : 80MHz
+[00081.490] RX I (40) boot.esp32s3: SPI Mode       : DIO
+[00081.496] RX I (43) boot.esp32s3: SPI Flash Size : 4MB
+[00081.502] RX I (47) boot: Enabling RNG early entropy source...
+[00081.502] RX I (52) boot: Partition Table:
+[00081.507] RX I (54) boot: ## Label            Usage          Type ST Offset   Length
+[00081.513] RX I (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+[00081.524] RX I (67) boot:  1 otadata          OTA data         01 00 0000f000 00002000
+[00081.529] RX I (73) boot:  2 ota_0            OTA app          00 10 00020000 00180000
+[00081.535] RX I (80) boot:  3 ota_1            OTA app          00 11 001a0000 00180000
+[00081.535] RX I (87) boot: End of partition table
+[00081.542] RX I (90) esp_image: segment 0: paddr=00020020 vaddr=3c0a0020 size=378a8h (227496) map
+[00081.583] RX I (138) esp_image: segment 1: paddr=000578d0 vaddr=3fc97200 size=05188h ( 20872) load
+[00081.589] RX I (143) esp_image: segment 2: paddr=0005ca60 vaddr=40374000 size=035b8h ( 13752) load
+[00081.595] RX I (146) esp_image: segment 3: paddr=00060020 vaddr=42000020 size=9b1c0h (635328) map
+[00081.705] RX I (263) esp_image: segment 4: paddr=000fb1e8 vaddr=403775b8 size=0fb58h ( 64344) load
+[00081.719] RX I (278) esp_image: segment 5: paddr=0010ad48 vaddr=50000000 size=00024h (    36) load
+[00081.726] RX I (286) boot: Loaded app from partition at offset 0x20000
+[00081.730] RX I (287) boot: Disabling RNG early entropy source...
+[00081.734] RX I (297) cpu_start: Multicore app
+[00081.750] RX I (305) cpu_start: GPIO 44 and 43 are used as console UART I/O pins
+[00081.750] RX I (306) cpu_start: Pro cpu start user code
+[00081.756] RX I (306) cpu_start: cpu freq: 160000000 Hz
+[00081.761] RX I (307) app_init: Application information:
+[00081.761] RX I (311) app_init: Project name:     sentry_fw7
+[00081.767] RX I (315) app_init: App version:      2.1.0
+[00081.772] RX I (319) app_init: Compile time:     Oct  6 2026 02:14:57
+[00081.778] RX I (324) app_init: ELF file SHA256:  c9460b826...
+[00081.778] RX I (328) app_init: ESP-IDF:          v6.0.1
+[00081.783] RX I (332) efuse_init: Min chip rev:     v0.0
+[00081.789] RX I (336) efuse_init: Max chip rev:     v0.99 
+[00081.794] RX I (340) efuse_init: Chip rev:         v0.2
+[00081.800] RX I (344) heap_init: Initializing. RAM available for dynamic allocation:
+[00081.806] RX I (350) heap_init: At 3FCA0950 len 00048DC0 (291 KiB): RAM
+[00081.806] RX I (355) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+[00081.811] RX I (360) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+[00081.817] RX I (366) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM
+[00081.822] RX I (372) spi_flash: detected chip: boya
+[00081.828] RX I (374) spi_flash: flash io: dio
+[00081.839] RX W (377) spi_flash: Detected size(16384k) larger than the size in the binary image header(4096k). Using the size in the binary image header.
+[00081.845] RX I (390) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+[00081.850] RX I (396) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+[00081.851] RX I (403) main_task: Started on CPU0
+[00081.861] RX I (423) main_task: Calling app_main()
+[00081.883] RX I (433) temperature_sensor: Range [-10°C ~ 80°C], error < 1°C
+[00081.889] RX I (443) sentry: ==============================================
+[00081.894] RX I (443) sentry:   SENTRY SWM-2  sonar watch module  fw v2.1.0
+[00081.900] RX I (443) sentry:   bow sonar array / perimeter watch / CIC link
+[00081.905] RX I (453) sentry: ==============================================
+[00081.906] RX I (453) pp: pp rom version: e7ae62f
+[00081.911] RX I (463) net80211: net80211 rom version: e7ae62f
+[00081.917] RX I (473) wifi:wifi driver task: 3fced670, prio:23, stack:6656, core=0
+[00081.923] RX I (473) wifi:wifi firmware version: b37c951
+[00081.923] RX I (473) wifi:wifi certification version: v7.0
+[00081.928] RX I (473) wifi:config NVS flash: enabled
+[00081.933] RX I (483) wifi:config nano formatting: disabled
+[00081.939] RX I (483) wifi:Init data frame dynamic rx buffer num: 32
+[00081.939] RX I (493) wifi:Init static rx mgmt buffer num: 5
+[00081.945] RX I (493) wifi:Init management short buffer num: 32
+[00081.950] RX I (493) wifi:Init dynamic tx buffer num: 32
+[00081.956] RX I (503) wifi:Init static tx FG buffer num: 2
+[00081.956] RX I (503) wifi:Init static rx buffer size: 1600
+[00081.961] RX I (513) wifi:Init static rx buffer num: 10
+[00081.967] RX I (513) wifi:Init dynamic rx buffer num: 32
+[00081.967] RX I (513) wifi_init: rx ba win: 6
+[00081.972] RX I (523) wifi_init: accept mbox: 6
+[00081.972] RX I (523) wifi_init: tcpip mbox: 32
+[00081.978] RX I (523) wifi_init: udp mbox: 6
+[00081.978] RX I (533) wifi_init: tcp mbox: 6
+[00081.983] RX I (533) wifi_init: tcp tx win: 5760
+[00081.984] RX I (533) wifi_init: tcp rx win: 5760
+[00081.989] RX I (543) wifi_init: tcp mss: 1440
+[00081.995] RX I (543) wifi_init: WiFi IRAM OP enabled
+[00081.995] RX I (543) wifi_init: WiFi RX IRAM OP enabled
+[00082.000] RX I (553) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10
+[00082.036] RX I (593) wifi:mode : sta (84:fc:e6:54:43:b0)
+[00082.042] RX I (593) wifi:enable tsf
+[00082.047] RX I (603) sentry: [LINK] known network 'iPhone (Руслан)'. Type 'reconnect' to connect
+[00082.053] RX I (603) sentry: [AUTH] profile 'qa_user' registered
+[00082.058] RX I (603) sentry: last reset: software reboot
+[00082.058] RX I (613) sentry: build tag: ***
+[00082.064] RX I (613) sentry: [HW] transducer array: 1 ch, 40 kHz, driver OK
+[00082.070] RX I (623) sentry: [HW] hull penetrator seal: OK, pressure sensor: OK
+[00082.081] RX W (623) sentry: [NAV] depth sensor offline (lab mode) - using simulator
+[00082.086] RX I (633) sentry: [NAV] carrier: SSK 'Skat', bow sonar bay #2, depth 41.8 m
+[00082.092] RX I (633) sentry: [OTA] running v2.1.0 from ota_0
+[00082.092] RX I (643) sentry: ready. state 1 NORMAL (patrol). Type 'help'
+[00082.095] RX I (643) main_task: Returned from app_main()
+[00082.151] TX whoami
+[00082.153] RX whoami
+[00082.255] RX I (823) sentry: not logged in
+[00082.466] TX reconnect
+[00082.473] RX reconnect
+[00082.681] RX I (1243) sentry: [LINK] raising buoy antenna, connecting to 'iPhone (Руслан)'...
+[00083.383] RX I (1933) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[00083.383] RX I (1943) wifi:state: init -> auth (0xb0)
+[00083.387] RX I (1943) wifi:state: auth -> assoc (0x0)
+[00083.392] RX I (1953) wifi:state: assoc -> run (0x10)
+[00083.436] RX I (1993) wifi:connected with iPhone (Руслан), aid = 1, channel 6, BW20, bssid = 6a:21:73:a5:a7:d3
+[00083.447] RX I (1993) wifi:security: WPA2-PSK, phy: bgn, rssi: -30, cipher(pairwise:0x3, group:0x3), pmf:0
+[00083.447] RX I (1993) wifi:pm start, type: 1
+[00083.447] RX 
+[00083.458] RX I (2003) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+[00083.462] RX I (2013) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+[00083.504] RX I (2063) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[00084.484] RX I (3043) esp_netif_handlers: sta ip: 172.20.10.7, mask: 255.255.255.240, gw: 172.20.10.1
+[00084.489] RX I (3043) sentry: [LINK] got ip 172.20.10.7
+[00084.495] RX I (3043) sentry: [LINK] connected to 'iPhone (Руслан)', rssi -27 dBm (excellent)
+[00084.499] RX I (3053) wifi:<ba-add>idx:0 (ifx:0, 6a:21:73:a5:a7:d3), tid:0, ssn:2, winSize:64
+[00084.954] RX I (3513) esp-x509-crt-bundle: Certificate validated
+[00085.771] RX I (4333) sentry: [LINK] fleet network reachable (internet OK)
+[00090.138] RX I (8703) sentry: [LINK] time: synced via NTP, 21:49:15
+[00090.190] TX login qa_user ***
+[00090.203] RX login qa_user ***
+[00090.309] RX E (8873) sentry: E209 wrong login or password. Attempts: 1/3
+[00090.522] TX whoami
+[00090.533] RX whoami
+[00090.635] RX I (9203) sentry: not logged in
+[00090.845] TX logout
+[00090.853] RX logout
+[00090.955] RX W (9523) sentry: W211 not logged in
+[00091.119] NOTE RECOVERY: try changed password
+[00091.171] TX login qa_user ***
+[00091.186] RX login qa_user ***
+[00091.289] RX E (9853) sentry: E209 wrong login or password. Attempts: 2/3
+[00091.504] TX whoami
+[00091.513] RX whoami
+[00091.615] RX I (10183) sentry: not logged in
+[00091.778] NOTE RECOVERY: try original password
+[00091.833] TX login qa_user ***
+[00091.844] RX login qa_user ***
+[00091.949] RX I (10513) sentry: [AUTH] operator qa_user on watch, console 2
+[00092.166] TX whoami
+[00092.173] RX whoami
+[00092.276] RX I (10843) sentry: user: qa_user, access: user
+[00092.495] TX logout
+[00092.503] RX logout
+[00092.608] RX I (11173) sentry: [AUTH] operator qa_user relieved from watch
+[00092.820] TX whoami
+[00092.823] RX whoami
+[00092.925] RX I (11493) sentry: not logged in
+[00093.142] TX reconnect
+[00093.153] RX reconnect
+[00093.257] RX W (11823) sentry: W114 already connected
+[00093.312] TX login qa_user ***
+[00093.324] RX login qa_user ***
+[00093.429] RX I (11993) sentry: [AUTH] operator qa_user on watch, console 2
+[00093.647] TX whoami
+[00093.653] RX whoami
+[00093.756] RX I (12323) sentry: user: qa_user, access: user
+[00093.931] NOTE PYTEST call: failed
+[00093.931] NOTE CLEANUP
+[00093.986] TX whoami
+[00093.992] RX whoami
+[00094.096] RX I (12663) sentry: user: qa_user, access: user
+[00094.313] TX state 1
+[00094.323] RX state 1
+[00094.426] RX W (12993) sentry: W303 already in 1 NORMAL
+[00094.645] TX distance stop
+[00094.653] RX distance stop
+[00094.757] RX W (13323) sentry: W710 measuring is not running
+[00094.965] TX relay schedule off
+[00094.974] RX relay schedule off
+[00095.077] RX W (13643) sentry: W605 schedule is not running
+[00095.287] TX relay auto off
+[00095.293] RX relay auto off
+[00095.400] RX I (13963) sentry: [VALVE] auto off - valve ignores on sonar proximity alarm
+[00095.618] TX relay status
+[00095.623] RX relay status
+[00095.727] RX I (14293) sentry: [VALVE] closed, auto off, cycles 92
+[00095.942] TX lamp timer 0
+[00095.953] RX lamp timer 0
+[00096.056] RX I (14623) sentry: [BEACON] timer cancelled
+[00096.271] TX lamp off
+[00096.283] RX lamp off
+[00096.386] RX W (14953) sentry: W510 lamp already off
+[00096.602] TX lamp mode solid
+[00096.613] RX lamp mode solid
+[00096.717] RX I (15283) sentry: [BEACON] mode: solid
+[00096.934] TX lamp color white
+[00096.943] RX lamp color white
+[00097.048] RX I (15613) sentry: [BEACON] color: white (255,255,255)
+[00097.267] TX lamp brightness 50
+[00097.274] RX lamp brightness 50
+[00097.377] RX I (15943) sentry: [BEACON] brightness: 50%
+[00097.593] TX health interval 30
+[00097.604] RX health interval 30
+[00097.707] RX I (16273) sentry: [TELEMETRY] interval 30 s
+[00097.926] TX health on
+[00097.933] RX health on
+[00098.047] RX I (16613) sentry: [TELEMETRY] auto report on
+[00098.211] NOTE CLEANUP COMPLETE

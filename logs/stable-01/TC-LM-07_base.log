@@ -1,0 +1,96 @@
+[00190.391] NOTE PORT /dev/cu.usbmodem5C834702551; FW 2.1.0; UART 115200 8N1
+[00190.391] NOTE CASE TC-LM-07; VARIANT base; FW 2.1.0
+[00190.445] TX whoami
+[00190.447] RX whoami
+[00190.551] RX I (190549) sentry: user: qa_user, access: user
+[00190.767] TX state 1
+[00190.777] RX state 1
+[00190.881] RX W (190879) sentry: W303 already in 1 NORMAL
+[00191.095] TX distance stop
+[00191.107] RX distance stop
+[00191.211] RX W (191209) sentry: W710 measuring is not running
+[00191.432] TX relay auto off
+[00191.438] RX relay auto off
+[00191.544] RX I (191539) sentry: [VALVE] auto off - valve ignores on sonar proximity alarm
+[00191.758] TX relay schedule off
+[00191.768] RX relay schedule off
+[00191.871] RX W (191869) sentry: W605 schedule is not running
+[00192.085] TX relay status
+[00192.088] RX relay status
+[00192.192] RX I (192189) sentry: [VALVE] closed, auto off, cycles 16
+[00192.409] TX lamp timer 0
+[00192.418] RX lamp timer 0
+[00192.521] RX I (192519) sentry: [BEACON] timer cancelled
+[00192.733] TX lamp off
+[00192.737] RX lamp off
+[00192.840] RX W (192839) sentry: W510 lamp already off
+[00193.054] TX health off
+[00193.057] RX health off
+[00193.172] RX I (193169) sentry: [TELEMETRY] auto report off
+[00193.334] NOTE PRECONDITIONS READY
+[00193.390] TX lamp mode solid
+[00193.398] RX lamp mode solid
+[00193.501] RX I (193499) sentry: [BEACON] mode: solid
+[00193.716] TX lamp brightness 50
+[00193.728] RX lamp brightness 50
+[00193.832] RX I (193829) sentry: [BEACON] brightness: 50%
+[00194.045] TX lamp color white
+[00194.048] RX lamp color white
+[00194.153] RX I (194149) sentry: [BEACON] color: white (255,255,255)
+[00194.371] TX lamp on
+[00194.377] RX lamp on
+[00194.483] RX I (194479) sentry: [BEACON] on (command) solid, 50%, color (255,255,255)
+[00194.647] NOTE PYTEST setup: passed
+[00194.703] TX lamp timer 5
+[00194.708] RX lamp timer 5
+[00194.811] RX I (194809) sentry: [BEACON] auto-off in 5 ms
+[00195.780] TX lamp status
+[00195.788] RX lamp status
+[00195.895] RX I (195889) sentry: [BEACON] ON, color (255,255,255), brightness 50%, mode solid, timer 3 s left
+[00199.821] RX I (199819) sentry: [BEACON] off (timer expired)
+[00200.782] TX lamp status
+[00200.787] RX lamp status
+[00200.895] RX I (200889) sentry: [BEACON] off, color (255,255,255), brightness 50%, mode solid, timer off
+[00201.057] NOTE PYTEST call: passed
+[00201.058] NOTE CLEANUP
+[00201.113] TX whoami
+[00201.117] RX whoami
+[00201.221] RX I (201219) sentry: user: qa_user, access: user
+[00201.439] TX state 1
+[00201.447] RX state 1
+[00201.550] RX W (201549) sentry: W303 already in 1 NORMAL
+[00201.766] TX distance stop
+[00201.778] RX distance stop
+[00201.881] RX W (201879) sentry: W710 measuring is not running
+[00202.096] TX relay schedule off
+[00202.108] RX relay schedule off
+[00202.211] RX W (202209) sentry: W605 schedule is not running
+[00202.423] TX relay auto off
+[00202.428] RX relay auto off
+[00202.534] RX I (202529) sentry: [VALVE] auto off - valve ignores on sonar proximity alarm
+[00202.749] TX relay status
+[00202.758] RX relay status
+[00202.862] RX I (202859) sentry: [VALVE] closed, auto off, cycles 16
+[00203.078] TX lamp timer 0
+[00203.087] RX lamp timer 0
+[00203.191] RX I (203189) sentry: [BEACON] timer cancelled
+[00203.408] TX lamp off
+[00203.417] RX lamp off
+[00203.520] RX W (203519) sentry: W510 lamp already off
+[00203.733] TX lamp mode solid
+[00203.738] RX lamp mode solid
+[00203.841] RX I (203839) sentry: [BEACON] mode: solid
+[00204.058] TX lamp color white
+[00204.068] RX lamp color white
+[00204.173] RX I (204169) sentry: [BEACON] color: white (255,255,255)
+[00204.386] TX lamp brightness 50
+[00204.398] RX lamp brightness 50
+[00204.502] RX I (204499) sentry: [BEACON] brightness: 50%
+[00204.721] TX health interval 30
+[00204.728] RX health interval 30
+[00204.831] RX I (204829) sentry: [TELEMETRY] interval 30 s
+[00205.046] TX health on
+[00205.057] RX health on
+[00205.171] RX I (205169) sentry: [TELEMETRY] auto report on
+[00205.333] NOTE CLEANUP COMPLETE
+[00205.334] NOTE PYTEST teardown: passed

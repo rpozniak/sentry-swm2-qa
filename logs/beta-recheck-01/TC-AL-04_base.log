@@ -1,0 +1,99 @@
+[00025.102] NOTE PORT /dev/cu.usbmodem5C834702551; FW 2.3.0; UART 115200 8N1
+[00025.102] NOTE CASE TC-AL-04; VARIANT base; FW 2.3.0
+[00025.153] TX whoami
+[00025.162] RX whoami
+[00025.266] RX I (25260) sentry: user: qa_user, access: user
+[00025.485] TX state 1
+[00025.492] RX state 1
+[00025.595] RX W (25590) sentry: W303 already in 1 NORMAL
+[00025.812] TX distance stop
+[00025.823] RX distance stop
+[00025.926] RX W (25920) sentry: W710 measuring is not running
+[00026.142] TX relay auto off
+[00026.153] RX relay auto off
+[00026.259] RX I (26250) sentry: [VALVE] auto off - valve ignores on sonar proximity alarm
+[00026.472] TX relay schedule off
+[00026.483] RX relay schedule off
+[00026.586] RX W (26580) sentry: W605 schedule is not running
+[00026.798] TX relay status
+[00026.803] RX relay status
+[00026.906] RX I (26900) sentry: [VALVE] closed, auto off, cycles 122
+[00027.125] TX lamp timer 0
+[00027.133] RX lamp timer 0
+[00027.236] RX I (27230) sentry: [BEACON] timer cancelled
+[00027.454] TX lamp off
+[00027.462] RX lamp off
+[00027.565] RX W (27560) sentry: W510 lamp already off
+[00027.777] TX health off
+[00027.782] RX health off
+[00027.896] RX I (27890) sentry: [TELEMETRY] auto report off
+[00028.056] NOTE PRECONDITIONS READY
+[00028.111] TX alert ack all
+[00028.123] RX alert ack all
+[00028.226] RX W (28220) sentry: W853 no unacknowledged alerts
+[00028.443] TX alert clear
+[00028.453] RX alert clear
+[00028.555] RX I (28550) sentry: [CIC] cleared
+[00028.775] TX alert test info
+[00028.783] RX alert test info
+[00028.887] RX I (28880) sentry: [CIC #3 INFO] test: test alert
+[00029.102] TX alert ack all
+[00029.113] RX alert ack all
+[00029.216] RX I (29210) sentry: [CIC] 1 alerts acknowledged
+[00029.433] TX alert list
+[00029.442] RX alert list
+[00029.547] RX I (29540) sentry: [CIC] 1 alerts, 0 unacknowledged:
+[00029.552] RX I (29540) sentry:   #3   22:08:44 INFO       test    test alert
+[00029.716] NOTE PRECONDITION: alert #3 acknowledged through ack all
+[00029.717] NOTE PYTEST setup: passed
+[00029.772] TX alert ack 3
+[00029.782] RX alert ack 3
+[00029.885] RX E (29880) sentry: E851 no alert #3
+[00030.053] NOTE PYTEST call: failed
+[00030.108] TX alert ack all
+[00030.113] RX alert ack all
+[00030.216] RX W (30210) sentry: W853 no unacknowledged alerts
+[00030.431] TX alert clear
+[00030.443] RX alert clear
+[00030.545] RX I (30540) sentry: [CIC] cleared
+[00030.709] NOTE CLEANUP
+[00030.760] TX whoami
+[00030.762] RX whoami
+[00030.866] RX I (30860) sentry: user: qa_user, access: user
+[00031.081] TX state 1
+[00031.092] RX state 1
+[00031.196] RX W (31190) sentry: W303 already in 1 NORMAL
+[00031.410] TX distance stop
+[00031.413] RX distance stop
+[00031.516] RX W (31510) sentry: W710 measuring is not running
+[00031.734] TX relay schedule off
+[00031.743] RX relay schedule off
+[00031.846] RX W (31840) sentry: W605 schedule is not running
+[00032.065] TX relay auto off
+[00032.073] RX relay auto off
+[00032.179] RX I (32170) sentry: [VALVE] auto off - valve ignores on sonar proximity alarm
+[00032.394] TX relay status
+[00032.403] RX relay status
+[00032.507] RX I (32500) sentry: [VALVE] closed, auto off, cycles 122
+[00032.719] TX lamp timer 0
+[00032.722] RX lamp timer 0
+[00032.826] RX I (32820) sentry: [BEACON] timer cancelled
+[00033.041] TX lamp off
+[00033.052] RX lamp off
+[00033.155] RX W (33150) sentry: W510 lamp already off
+[00033.372] TX lamp mode solid
+[00033.383] RX lamp mode solid
+[00033.486] RX I (33480) sentry: [BEACON] mode: solid
+[00033.702] TX lamp color white
+[00033.713] RX lamp color white
+[00033.817] RX I (33810) sentry: [BEACON] color: white (255,255,255)
+[00034.029] TX lamp brightness 50
+[00034.033] RX lamp brightness 50
+[00034.136] RX I (34130) sentry: [BEACON] brightness: 50%
+[00034.354] TX health interval 30
+[00034.363] RX health interval 30
+[00034.466] RX I (34460) sentry: [TELEMETRY] interval 30 s
+[00034.679] TX health on
+[00034.682] RX health on
+[00034.797] RX I (34790) sentry: [TELEMETRY] auto report on
+[00034.960] NOTE CLEANUP COMPLETE

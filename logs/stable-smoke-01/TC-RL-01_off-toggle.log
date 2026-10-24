@@ -1,0 +1,86 @@
+[00077.807] NOTE PORT /dev/cu.usbmodem5C834702551; FW 2.1.0; UART 115200 8N1
+[00077.807] NOTE CASE TC-RL-01; VARIANT off-toggle; FW 2.1.0
+[00077.858] TX whoami
+[00077.870] RX whoami
+[00077.973] RX I (77969) sentry: user: qa_user, access: user
+[00078.192] TX state 1
+[00078.200] RX state 1
+[00078.303] RX W (78299) sentry: W303 already in 1 NORMAL
+[00078.518] TX distance stop
+[00078.530] RX distance stop
+[00078.634] RX W (78629) sentry: W710 measuring is not running
+[00078.847] TX relay auto off
+[00078.850] RX relay auto off
+[00078.956] RX I (78949) sentry: [VALVE] auto off - valve ignores on sonar proximity alarm
+[00079.168] TX relay schedule off
+[00079.181] RX relay schedule off
+[00079.283] RX W (79279) sentry: W605 schedule is not running
+[00079.498] TX relay status
+[00079.509] RX relay status
+[00079.614] RX I (79609) sentry: [VALVE] closed, auto off, cycles 8
+[00079.831] TX lamp timer 0
+[00079.840] RX lamp timer 0
+[00079.943] RX I (79939) sentry: [BEACON] timer cancelled
+[00080.161] TX lamp off
+[00080.170] RX lamp off
+[00080.273] RX W (80269) sentry: W510 lamp already off
+[00080.492] TX health off
+[00080.500] RX health off
+[00080.614] RX I (80609) sentry: [TELEMETRY] auto report off
+[00080.779] NOTE PRECONDITIONS READY
+[00080.781] NOTE PYTEST setup: passed
+[00080.836] TX relay status
+[00080.840] RX relay status
+[00080.944] RX I (80939) sentry: [VALVE] closed, auto off, cycles 8
+[00081.162] TX relay toggle
+[00081.170] RX relay toggle
+[00081.283] RX I (81279) sentry: [VALVE] OPEN (command)
+[00081.498] TX relay status
+[00081.500] RX relay status
+[00081.604] RX I (81599) sentry: [VALVE] OPEN, auto off, cycles 10
+[00081.768] NOTE PYTEST call: passed
+[00081.769] NOTE CLEANUP
+[00081.825] TX whoami
+[00081.829] RX whoami
+[00081.933] RX I (81929) sentry: user: qa_user, access: user
+[00082.149] TX state 1
+[00082.160] RX state 1
+[00082.263] RX W (82259) sentry: W303 already in 1 NORMAL
+[00082.477] TX distance stop
+[00082.480] RX distance stop
+[00082.583] RX W (82579) sentry: W710 measuring is not running
+[00082.798] TX relay schedule off
+[00082.810] RX relay schedule off
+[00082.913] RX W (82909) sentry: W605 schedule is not running
+[00083.129] TX relay auto off
+[00083.140] RX relay auto off
+[00083.247] RX I (83239) sentry: [VALVE] auto off - valve ignores on sonar proximity alarm
+[00083.463] TX relay status
+[00083.470] RX relay status
+[00083.574] RX I (83569) sentry: [VALVE] OPEN, auto off, cycles 10
+[00083.897] TX relay off
+[00083.900] RX relay off
+[00084.014] RX I (84009) sentry: [VALVE] CLOSED (command)
+[00084.221] TX lamp timer 0
+[00084.230] RX lamp timer 0
+[00084.333] RX I (84329) sentry: [BEACON] timer cancelled
+[00084.547] TX lamp off
+[00084.549] RX lamp off
+[00084.653] RX W (84649) sentry: W510 lamp already off
+[00084.869] TX lamp mode solid
+[00084.880] RX lamp mode solid
+[00084.984] RX I (84979) sentry: [BEACON] mode: solid
+[00085.198] TX lamp color white
+[00085.210] RX lamp color white
+[00085.315] RX I (85309) sentry: [BEACON] color: white (255,255,255)
+[00085.528] TX lamp brightness 50
+[00085.541] RX lamp brightness 50
+[00085.644] RX I (85639) sentry: [BEACON] brightness: 50%
+[00085.860] TX health interval 30
+[00085.870] RX health interval 30
+[00085.974] RX I (85969) sentry: [TELEMETRY] interval 30 s
+[00086.191] TX health on
+[00086.200] RX health on
+[00086.314] RX I (86309) sentry: [TELEMETRY] auto report on
+[00086.473] NOTE CLEANUP COMPLETE
+[00086.473] NOTE PYTEST teardown: passed

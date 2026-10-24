@@ -6,8 +6,10 @@
 
 ## Матеріали
 
+- [Результати та баг-репорти](REPORT.md)
 - [Тест-план](docs/TEST_PLAN.md)
 - [Тест-кейси](docs/TEST_CASES.md)
+- [Налаштування й запуск автотестів](tests/README.md)
 - [Матриця трасування і результатів](docs/TRACEABILITY.md)
 - [Теоретичний HIL-стенд і схема](docs/HIL_STAND.md)
 - [Вимоги прошивки](reference/PRD.md)
@@ -33,7 +35,7 @@ source .venv/bin/activate
 python -m pip install -r requirements.txt
 ```
 
-Команда запуску pytest із кореня репозиторію: `python -m pytest`.
+Облікові дані тестового профілю задаються в `config.local.json` за зразком `config.example.json`. Запуск із кореня репозиторію: `python -m pytest --fw=2.1.0 --run-id=stable-01`. Повні команди та покриття — у [tests/README.md](tests/README.md).
 
 ## Докази
 
