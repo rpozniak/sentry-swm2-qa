@@ -1,0 +1,31 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# Local credentials and device settings
+.env
+.env.*
+!.env.example
+secrets.*
+config.local.*
+
+# Unsanitized logs and local output
+/logs/raw/
+/reports/
+/tmp/
+
+# Firmware and archives stay local
+*.bin
+*.zip
+
+# Editors and macOS
+.DS_Store
+._*
+.idea/
+.vscode/
